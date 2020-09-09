@@ -1,0 +1,118 @@
+{
+    "Author": "torusrxxx",
+    "Bugreport": "https://github.com/torusrxxx/ExtraInfo/issues",
+    "CompressedSize": 18447,
+    "Convert": [
+        {
+            "Action": "unpack_file",
+            "Path": "docs/ExtraInfo/LICENSE",
+            "Pattern": "ExtraInfo.zip",
+            "Src": "LICENSE"
+        },
+        {
+            "Action": "unpack_file",
+            "Path": "x32/plugins/ExtraInfo.dp32",
+            "Pattern": "ExtraInfo.zip",
+            "Src": "ExtraInfo.dp32"
+        },
+        {
+            "Action": "unpack_file",
+            "Path": "x64/plugins/ExtraInfo.dp64",
+            "Pattern": "ExtraInfo.zip",
+            "Src": "ExtraInfo.dp64"
+        }
+    ],
+    "Date": "2016-11-20",
+    "Download": [
+        {
+            "Src": "https://github.com/torusrxxx/ExtraInfo/releases/download/v1.03/ExtraInfo.zip"
+        }
+    ],
+    "Github": "https://github.com/torusrxxx/ExtraInfo",
+    "Info": "Show extra information in the info box.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "docs"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "docs/ExtraInfo"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "docs/ExtraInfo/LICENSE",
+            "SHA1": "174ee4ee10dd517739ac2a5085187b3c31a86cb8"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/ExtraInfo.dp32",
+            "SHA1": "11d3209fa42d7d4c8f88d8bc07f4a0dc7cb9fce8"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/ExtraInfo.dp64",
+            "SHA1": "48c00beda53a5d69b9a3b973714d835ed11b87df"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "ExtraInfo",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "docs/ExtraInfo/LICENSE"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/ExtraInfo.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/ExtraInfo.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "docs/ExtraInfo"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "docs"
+        }
+    ],
+    "Size": 39202,
+    "Src": "ExtraInfo.x64dbg.zip",
+    "Version": "v1.03"
+}

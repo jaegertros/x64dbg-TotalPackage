@@ -1,0 +1,84 @@
+{
+    "Author": "lowprio20",
+    "Bugreport": "http://low-priority.appspot.com/ollydumpex",
+    "CompressedSize": 124622,
+    "Date": "2020-01-06",
+    "Info": "Process memory dumper for x64dbg, OllyDbg and Immunity Debugger.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "docs"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "docs/Readme.txt",
+            "SHA1": "dfa7cba4871626f14557656446d8595edac109af"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/OllyDumpEx_X64Dbg.dp32",
+            "SHA1": "c15e27cc9a133a80a02188cce331baabce047916"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/OllyDumpEx_X64Dbg.dp64",
+            "SHA1": "be550dafefa634c8cdd8d42b0f00384f9abb8664"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "OllyDumpEx",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "docs/Readme.txt"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/OllyDumpEx_X64Dbg.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/OllyDumpEx_X64Dbg.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "docs"
+        }
+    ],
+    "Size": 265423,
+    "Src": "OllyDumpEx_1.80.x64dbg.zip",
+    "Version": "1.80"
+}

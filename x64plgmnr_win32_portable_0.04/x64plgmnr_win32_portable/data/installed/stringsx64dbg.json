@@ -1,0 +1,81 @@
+{
+    "Author": "hors",
+    "Bugreport": "https://github.com/horsicq/stringsx64dbg/issues",
+    "CompressedSize": 99246,
+    "Convert": [
+        {
+            "Action": "unpack_directory",
+            "Path": "/",
+            "Pattern": "release.zip",
+            "Src": "release"
+        }
+    ],
+    "Date": "2019-12-28",
+    "Download": [
+        {
+            "Src": "https://github.com/horsicq/stringsx64dbg/releases/download/0.05/release.zip"
+        }
+    ],
+    "Github": "https://github.com/horsicq/stringsx64dbg",
+    "Info": "Strings plugin. ANSI and UNICODE. RegEXP support.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/strings.dp32",
+            "SHA1": "c2e08cc571eb3942a03d50bb1b7fa1f015855b09"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/strings.dp64",
+            "SHA1": "11ee6bc12115213903522ab21ef7ed10b9f36c24"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "stringsx64dbg",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/strings.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/strings.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 263168,
+    "Src": "stringsx64dbg.x64dbg.zip",
+    "Version": "0.05"
+}

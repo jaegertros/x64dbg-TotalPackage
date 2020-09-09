@@ -1,0 +1,59 @@
+{
+    "Author": "mrfearless",
+    "Bugreport": "https://github.com/mrfearless/CodeShot-Plugin-x86/issues",
+    "CompressedSize": 67695,
+    "Date": "2018-06-17",
+    "Info": "A plugin to capture the x64dbg screen to an image file.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "docs"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "docs/CodeShot-readme.txt",
+            "SHA1": "201e310f9651127d1c45f3381591ff57896bfacc"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/CodeShot.dp32",
+            "SHA1": "2515d0c54a01c9514c87ff0af2e8caa054e6b9fa"
+        }
+    ],
+    "Is32": true,
+    "Is64": false,
+    "Name": "CodeShot",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "docs/CodeShot-readme.txt"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/CodeShot.dp32"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "docs"
+        }
+    ],
+    "Size": 180167,
+    "Src": "CodeShot_1.0.0.X.x64dbg.zip",
+    "Version": "1.0.0.X"
+}

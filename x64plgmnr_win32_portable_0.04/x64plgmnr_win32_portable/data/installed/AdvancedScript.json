@@ -1,0 +1,177 @@
+{
+    "Author": "Ahmadmansoor",
+    "Bugreport": "https://github.com/Ahmadmansoor/AdvancedScript/issues",
+    "CompressedSize": 965371,
+    "Convert": [
+        {
+            "Action": "unpack_directory",
+            "Path": "x32/plugins",
+            "Pattern": "AdvancedScript",
+            "Src": "plugins_x32"
+        },
+        {
+            "Action": "unpack_directory",
+            "Path": "x64/plugins",
+            "Pattern": "AdvancedScript",
+            "Src": "plugins_x64"
+        }
+    ],
+    "Date": "2019-06-26",
+    "Download": [
+        {
+            "Src": "https://github.com/Ahmadmansoor/AdvancedScript/releases/download/ver4.3/AdvancedScript_4.3.zip"
+        }
+    ],
+    "Github": "https://github.com/Ahmadmansoor/AdvancedScript",
+    "Info": "Open-source C++/cli, some useful Functions which will help Plugin Coder's, New advanced Log Functions maybe in the future It will be as name it have :).",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/AdvancedScript_4.3.dp32",
+            "SHA1": "8487fb7a923a001cfe07afc2830111877311953c"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/AdvSconfig.txt",
+            "SHA1": "891f6e08e9c5ee5809c533efbfd93bfd1f04e420"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/AutocompleteMenu.dll",
+            "SHA1": "91e93cc71d5f687fe3732a3863cd05848a791483"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/HelpAdvancedScript.txt",
+            "SHA1": "3845c36f90699ddd572c40a5f2a169dbd0a00ddc"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/msvcp140.dll",
+            "SHA1": "735e1625b17e4122608eb3aff3702b97e08f1e51"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/vcruntime140.dll",
+            "SHA1": "3d3c2877cf3c4aa1a1f62708494375404d02cf22"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/AdvancedScript_4.3.dp64",
+            "SHA1": "721d0174f6b2267a2055b5c83ca54635ad9933fa"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/AdvSconfig.txt",
+            "SHA1": "891f6e08e9c5ee5809c533efbfd93bfd1f04e420"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/AutocompleteMenu.dll",
+            "SHA1": "91e93cc71d5f687fe3732a3863cd05848a791483"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/HelpAdvancedScript.txt",
+            "SHA1": "3845c36f90699ddd572c40a5f2a169dbd0a00ddc"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/msvcp140.dll",
+            "SHA1": "a301b523d49f2718e7b223524c7b55794279c024"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/vcruntime140.dll",
+            "SHA1": "0d31e12a37c1285a588b839c6feddd57e8b9e2e9"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "AdvancedScript",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/AdvancedScript_4.3.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/AdvSconfig.txt"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/AutocompleteMenu.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/HelpAdvancedScript.txt"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/msvcp140.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/vcruntime140.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/AdvancedScript_4.3.dp64"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/AdvSconfig.txt"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/AutocompleteMenu.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/HelpAdvancedScript.txt"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/msvcp140.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/vcruntime140.dll"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 2451664,
+    "Src": "AdvancedScript.x64dbg.zip",
+    "Version": "ver4.3"
+}

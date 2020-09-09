@@ -1,0 +1,92 @@
+{
+    "Author": "lowprio20",
+    "Bugreport": "http://low-priority.appspot.com/ollymigrate",
+    "CompressedSize": 60324,
+    "Date": "2019-03-14",
+    "Info": "This plugin make it possible to pass debuggee to another debugger without restarting (like VM live migration).",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "docs"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "docs/OllyMigrate"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "docs/OllyMigrate/Readme.txt",
+            "SHA1": "837800f4a00c31a9ee6719052d9d83f25e9b2c43"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/OllyMigrate_X64Dbg.dp32",
+            "SHA1": "a0be9e13f9d79c3d625df12a558071d2c84f48de"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/OllyMigrate_X64Dbg.dp64",
+            "SHA1": "808b53532f957d6e8da8486eab64ff889cea9e4e"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "OllyMigrate",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "docs/OllyMigrate/Readme.txt"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/OllyMigrate_X64Dbg.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/OllyMigrate_X64Dbg.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "docs/OllyMigrate"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "docs"
+        }
+    ],
+    "Size": 133599,
+    "Src": "OllyMigrate_1.06.x64dbg.zip",
+    "Version": "1.06"
+}

@@ -1,0 +1,81 @@
+{
+    "Author": "torusrxxx",
+    "Bugreport": "https://github.com/x64dbg/LabelPEB/issues",
+    "CompressedSize": 86121,
+    "Convert": [
+        {
+            "Action": "unpack_directory",
+            "Path": "/",
+            "Pattern": "LabelPEB",
+            "Src": "/"
+        }
+    ],
+    "Date": "2017-01-06",
+    "Download": [
+        {
+            "Src": "https://github.com/x64dbg/LabelPEB/releases/download/ac82b1b5/LabelPEB_ac82b1b5.zip"
+        }
+    ],
+    "Github": "https://github.com/x64dbg/LabelPEB",
+    "Info": "Add labels for fields in PEB.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/LabelPEB.dp32",
+            "SHA1": "6e09c7b01b6bde6f03db19fa760a81fe589fd2a3"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/LabelPEB.dp64",
+            "SHA1": "47999ff0a428cb52e3fbeb328bd925550800ef50"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "LabelPEB",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/LabelPEB.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/LabelPEB.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 172544,
+    "Src": "LabelPEB.x64dbg.zip",
+    "Version": "ac82b1b5"
+}

@@ -1,0 +1,213 @@
+{
+    "Author": "Dreg",
+    "Bugreport": "https://github.com/David-Reguera-Garcia-Dreg/DbgChild/issues",
+    "CompressedSize": 1150946,
+    "Convert": [
+        {
+            "Action": "unpack_directory",
+            "Path": "/",
+            "Pattern": "DbgChild.Beta.10.zip",
+            "Src": "DbgChild Beta 10/release"
+        }
+    ],
+    "Date": "2017-04-10",
+    "Download": [
+        {
+            "Src": "https://github.com/David-Reguera-Garcia-Dreg/DbgChild/releases/download/beta10/DbgChild.Beta.10.zip"
+        }
+    ],
+    "Github": "https://github.com/David-Reguera-Garcia-Dreg/DbgChild",
+    "Info": "This plugin is intended to give the user the option to debug (auto-attach) the child processes created by debugee.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "dbgchildlogs"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/CPIDS"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/CPIDS"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "NewProcessWatcher.exe",
+            "SHA1": "cc090d227e838f51c554a405b5d08da90dcf0759"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "readme_dbgchild.txt",
+            "SHA1": "f17fa7417b615b35947f780e3286e0891094ffd6"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/CreateProcessPatch.exe",
+            "SHA1": "502c899f2a1595d98f2d7e4ac8542399776d0212"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/DbgChildHookDLL.dll",
+            "SHA1": "6671c703f37faad7c641b9d69ef75ff073224c7e"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/NTDLLEntryPatch.exe",
+            "SHA1": "daa17d49a4b72b7894419332666741febf790433"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/dbgchild.dp32",
+            "SHA1": "c3e557385a2ba0f201e3f44c0585133ad2217bb9"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/CreateProcessPatch.exe",
+            "SHA1": "41a1f4626f1239a1b5ba6d7146331fd85a5667b1"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/DbgChildHookDLL.dll",
+            "SHA1": "18a51d4b30672dec8c969ec5d7808cbdd4732113"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/NTDLLEntryPatch.exe",
+            "SHA1": "7b3e91743c28ee14b03bb4b096250493f2a93f84"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/dbgchild.dp64",
+            "SHA1": "06531c7160ee3cb47b5c904ebb6fc781eb342ba1"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64_post.unicode.txt",
+            "SHA1": "94a2201bd9f378008baef62d1f378fc0029146f3"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64_pre.unicode.txt",
+            "SHA1": "b769f2928448c700d56c3d3039a4be4b5b310423"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x86_post.unicode.txt",
+            "SHA1": "b93619af20a606b2559b02bc6d851c496bd5741c"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x86_pre.unicode.txt",
+            "SHA1": "cadb322c142bbd63062da15fc1bd9e2cac4fb978"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "DbgChild",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "NewProcessWatcher.exe"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "readme_dbgchild.txt"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/CreateProcessPatch.exe"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/DbgChildHookDLL.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/NTDLLEntryPatch.exe"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/dbgchild.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/CreateProcessPatch.exe"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/DbgChildHookDLL.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/NTDLLEntryPatch.exe"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/dbgchild.dp64"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64_post.unicode.txt"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64_pre.unicode.txt"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x86_post.unicode.txt"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x86_pre.unicode.txt"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/CPIDS"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/CPIDS"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "dbgchildlogs"
+        }
+    ],
+    "Size": 4523421,
+    "Src": "DbgChild.x64dbg.zip",
+    "Version": "beta10"
+}

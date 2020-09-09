@@ -1,0 +1,88 @@
+{
+    "Author": "Codecat",
+    "Bugreport": "https://github.com/codecat/ClawSearch/issues",
+    "CompressedSize": 1597120,
+    "Convert": [
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/ClawSearch.dp32",
+            "Pattern": "ClawSearch.dp32"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/ClawSearch.dp64",
+            "Pattern": "ClawSearch.dp64"
+        }
+    ],
+    "Date": "2020-08-22",
+    "Download": [
+        {
+            "Src": "https://github.com/codecat/ClawSearch/releases/download/2020-08-22/ClawSearch.dp64"
+        },
+        {
+            "Src": "https://github.com/codecat/ClawSearch/releases/download/2020-08-22/ClawSearch.dp32"
+        }
+    ],
+    "Github": "https://github.com/codecat/ClawSearch/",
+    "Info": "A memory scanner plugin for x64dbg, inspired by Cheat Engine.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/ClawSearch.dp32",
+            "SHA1": "8e55dead4bcb19e7df7c588265ce356acf82aa15"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/ClawSearch.dp64",
+            "SHA1": "5f9bcc48d15f6b517a019bf0c8d252043eefef8a"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "ClawSearch",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/ClawSearch.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/ClawSearch.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 3184640,
+    "Src": "ClawSearch.x64dbg.zip",
+    "Version": "2020-08-22"
+}

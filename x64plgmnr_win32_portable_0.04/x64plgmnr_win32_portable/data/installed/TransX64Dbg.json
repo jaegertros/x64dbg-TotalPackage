@@ -1,0 +1,67 @@
+{
+    "Author": "levisre",
+    "Bugreport": "https://github.com/levisre/TransX64Dbg/issues",
+    "CompressedSize": 11915,
+    "Date": "2016-05-28",
+    "Info": "Small Plugin to make x64dbg Window becomes transparent.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/TransX64Dbg.dp32",
+            "SHA1": "ec70175eecbdd3f1221c2b9e0d69075b245d91c8"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/TransX64Dbg.dp64",
+            "SHA1": "1ebbc71748d0a083b16e98346245cc45419028d4"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "TransX64Dbg",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/TransX64Dbg.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/TransX64Dbg.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 26624,
+    "Src": "TransX64Dbg_1.7.x64dbg.zip",
+    "Version": "1.7"
+}

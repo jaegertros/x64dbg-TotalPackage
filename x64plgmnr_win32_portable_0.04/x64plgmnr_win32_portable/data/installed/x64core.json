@@ -1,0 +1,1379 @@
+{
+    "Author": "mrexodia",
+    "Bugreport": "https://github.com/x64dbg/x64dbg/issues",
+    "CompressedSize": 33311369,
+    "Convert": [
+        {
+            "Action": "unpack_file",
+            "Path": "commithash.txt",
+            "Pattern": "snapshot",
+            "Src": "commithash.txt"
+        },
+        {
+            "Action": "unpack_directory",
+            "Path": "/",
+            "Pattern": "snapshot",
+            "Src": "release"
+        }
+    ],
+    "Date": "2020-08-16",
+    "Download": [
+        {
+            "Src": "https://github.com/x64dbg/x64dbg/releases/download/snapshot/snapshot_2020-08-16_04-47.zip"
+        }
+    ],
+    "Github": "https://github.com/x64dbg/x64dbg",
+    "Info": "An open-source x64/x32 debugger for windows.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "themes"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "themes/Dark"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "themes/Dark/rc"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "translations"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/platforms"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/platforms"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "commithash.txt",
+            "SHA1": "2536bef79b05a1f815c9a15a1dccdf0586b998ce"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "errordb.txt",
+            "SHA1": "3b29fbc21cf4001736ca46940600a05f6c477ce1"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "exceptiondb.txt",
+            "SHA1": "612041fb6722acb08610b063b2acd18456dd81b4"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "mnemdb.json",
+            "SHA1": "0aea92793a7788cde5df1e8f87c47bbae97b73d1"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "ntstatusdb.txt",
+            "SHA1": "36cae59183e3a39a5e2244e9347bfd9b701a6861"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/branch_closed-on.png",
+            "SHA1": "69102cd7bed74df84b1dd0c0536d8e5f514292e4"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/branch_closed.png",
+            "SHA1": "b8ce8037f52516b805623a15ef1822a4006fb9ce"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/branch_open-on.png",
+            "SHA1": "97675393e4c0812a858b02d659b318a4fb4f43dc"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/branch_open.png",
+            "SHA1": "453e7a3fe3f64597d2e79de3b89cce53206d7a7c"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/checkbox_checked.png",
+            "SHA1": "1d9eee646d7a4178082b5038c9e6ac9a63f75085"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/checkbox_checked_disabled.png",
+            "SHA1": "1cf4811703f340fac25795ddbdf7529d40c497e4"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/checkbox_checked_focus.png",
+            "SHA1": "d6d2914bc75f06e536393205d98047d0226e1741"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/checkbox_indeterminate.png",
+            "SHA1": "8e3a08f77d4ce5264b8e0a681f7b945d214bfdbe"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/checkbox_indeterminate_disabled.png",
+            "SHA1": "05ec2a702758288770f0ff8846481e72b4dccbc4"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/checkbox_indeterminate_focus.png",
+            "SHA1": "88f9a35ecc32a24901353cd11938c2a0d51bba3d"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/checkbox_unchecked.png",
+            "SHA1": "2869ad344bd0d3b022e2d92dbdfbe782a72affc5"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/checkbox_unchecked_disabled.png",
+            "SHA1": "bd3b3cf6335d5fda36cbfcf342dae5d918d6b745"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/checkbox_unchecked_focus.png",
+            "SHA1": "1a8c869cf4a31d092385144d083fb87820a13511"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/close-hover.png",
+            "SHA1": "3a6f088f862e402bee4e4ccb156d43ab00c1587b"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/close-pressed.png",
+            "SHA1": "642b90b7c8e3e8625529180a9a45d0e558394fd7"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/close.png",
+            "SHA1": "a4770b66b505bbbe89848dfade54fea4df1d23f6"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/down_arrow.png",
+            "SHA1": "e296904cd0098a963e3c9c7c1dc5cb39ce4c8b0d"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/down_arrow_disabled.png",
+            "SHA1": "8c93aa6c597e2abcf42938f1e30aea1b45078d74"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/Hmovetoolbar.png",
+            "SHA1": "fa90cda28585625069b4eb886854d95137b03f43"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/Hsepartoolbar.png",
+            "SHA1": "fb9e8ba12cacfe2c0d5df36c1d469eaec94a0712"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/left_arrow.png",
+            "SHA1": "321e60a79355857a2d36df91c86cf0fbc79874f4"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/left_arrow_disabled.png",
+            "SHA1": "06ca9049724decf6934428c4d29ab9be9f35d322"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/radio_checked.png",
+            "SHA1": "646273c868e5a47476c8062b75d341db3e93de87"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/radio_checked_disabled.png",
+            "SHA1": "9a20836fdfa0ce3e4d1f58189166c664c8817d70"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/radio_checked_focus.png",
+            "SHA1": "202e26d789af606158ae920406a21ff3ad350020"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/radio_unchecked.png",
+            "SHA1": "e3643425a8e27d151c2ce547a0ace229b545f907"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/radio_unchecked_disabled.png",
+            "SHA1": "927653e570d7f7ffd1a1d8945d24a9b4a6b31846"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/radio_unchecked_focus.png",
+            "SHA1": "6e21e9486cf9f2e43d448748d52dafdbe2d87f0d"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/right_arrow.png",
+            "SHA1": "0d8e3a55111c26b9858a3a791406913bd73fd029"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/right_arrow_disabled.png",
+            "SHA1": "d56f217fea16e75a0d829ad89092c0670878b8f0"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/sizegrip.png",
+            "SHA1": "d53b52aee6dd1fb282ae46fe1d7aa4a5a5575206"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/stylesheet-branch-end.png",
+            "SHA1": "0cfe60d43892560529296885bc2a66ed4cec7079"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/stylesheet-branch-more.png",
+            "SHA1": "b216e4a6207b689bc605678225accf6d8c97833f"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/stylesheet-vline.png",
+            "SHA1": "a26736a74c25a2863440050a43eff7163b7053d0"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/transparent.png",
+            "SHA1": "5aab2b47ca3378f4de1b13c3ea0bbc85e20204a1"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/undock.png",
+            "SHA1": "51c4ba0addc40976649765a2f76cd6bc28f29a64"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/up_arrow.png",
+            "SHA1": "ce7e471df9dcef0a72fc49cd29e3e50f7052dff9"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/up_arrow_disabled.png",
+            "SHA1": "cd78c9785bc8cb88f37bc81e1902a54c2aaf5b56"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/Vmovetoolbar.png",
+            "SHA1": "9bb8675e5236201a5e826291aa47af73475aeb30"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/rc/Vsepartoolbar.png",
+            "SHA1": "0e24372a1888df1b0e3d79b270f0d29f78924c0c"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/style.css",
+            "SHA1": "a2eec559151718541415ae28b773da080a900281"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "themes/Dark/style.ini",
+            "SHA1": "f719abd0043fa23fba460746f0769991e5679b7d"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_af.qm",
+            "SHA1": "2aa2d42c51f9cf024e3777f0dde4270388fd22ae"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_ar.qm",
+            "SHA1": "67e47dcea831a105009c5d8dccf32f91623d2d71"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_bs.qm",
+            "SHA1": "dd2b0c9f2d6d346ab2d38be736dd7be1bc9860d9"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_ca.qm",
+            "SHA1": "7d0e0decec9ed428f5c18ae76b0d4f17d7fdb321"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_ceb.qm",
+            "SHA1": "06261084c64d738dbf15ff6b4ee57c141661c902"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_cs.qm",
+            "SHA1": "d1a0bae8662fb7607dd8461817e1f14fea827170"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_da.qm",
+            "SHA1": "2aa2d42c51f9cf024e3777f0dde4270388fd22ae"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_de.qm",
+            "SHA1": "a6b1b39556acaee3fa588f371b0c4ab603f09227"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_el.qm",
+            "SHA1": "9c2aa7a301eb17c2f8a7a47f7a413c1639238659"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_es_ES.qm",
+            "SHA1": "1fd3dc04cf9272b6b129f5485a24881262fe8c69"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_fa.qm",
+            "SHA1": "d4c3fce415ba33665945093cd8f7799d0d3ba241"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_fi.qm",
+            "SHA1": "c7fbe12440d868a085c7f1f1b658e42c968933b4"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_fil.qm",
+            "SHA1": "8a202b5319a6a75be7fb26704ea70129cbe48a49"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_fr.qm",
+            "SHA1": "b914278ba7e08d52b4133191a1364b7ffb31cf9e"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_he.qm",
+            "SHA1": "8a5fb4f98326dd6722cff0b36feac9f6950a2391"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_hu.qm",
+            "SHA1": "04196cc75c13aaab93e2a32f8970a7c6312995ea"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_it.qm",
+            "SHA1": "7f8685bf3a44b817443fab1de2ae2637c652e788"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_ja.qm",
+            "SHA1": "97e73789d16b4b79b3c4406d61acf135ef6a7beb"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_ka.qm",
+            "SHA1": "079b4d4b26f3cba841d8d2a979d8e438988972fd"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_ko.qm",
+            "SHA1": "50bbd2daf833101b10a30b70526e75e67e2e6cdc"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_nl.qm",
+            "SHA1": "c35bc8ac4fb0556e21aafe41dadf79683fc5f887"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_no.qm",
+            "SHA1": "bd19ad34c15285b3d5f4162aeba7338759f081b0"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_pl.qm",
+            "SHA1": "17495dd8b032c8a1e3b719248db7c81742491987"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_pt_BR.qm",
+            "SHA1": "39a59bf8b30d07f2e60e8f6418b2d7f7d350f3fd"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_pt_PT.qm",
+            "SHA1": "6fd642bd6827ac2e3cee2c5d797658eeb009c423"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_ro.qm",
+            "SHA1": "d054cc421a38ea8d4b22386b633b757002afc216"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_ru.qm",
+            "SHA1": "0fabe4c3454a7e9891c47f0d0b045bcf3ada73e0"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_si_LK.qm",
+            "SHA1": "8c1124509e78dd08c8c85db7ed347ee358e469f5"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_sr.qm",
+            "SHA1": "3d133100f51ca2013ef70bd4651e6f2d3498b5cc"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_sv_SE.qm",
+            "SHA1": "57e025731cb237092efa04f216b00a06ab27b8c1"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_th.qm",
+            "SHA1": "7c3b03a6f17d8a9f8fc19eb202f9484d98fd55d8"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_tr.qm",
+            "SHA1": "194e729532704ade06fc4df457d0c778fd04d088"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_uk.qm",
+            "SHA1": "f4f42167e654f5e541c8eb0c9d2f1541fb65196b"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_vi.qm",
+            "SHA1": "008d421aa5136abe139d893eb1af1ce7d930c4ef"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_zh_CN.qm",
+            "SHA1": "ac7549278e50a5e481ddc742bde01c127c7fb744"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "translations/x64dbg_zh_TW.qm",
+            "SHA1": "11d32e02665c929be7c122d3d673ac78439ca0bd"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "winconstants.txt",
+            "SHA1": "d0e3d2a8dae02e79da36ce830565df3f4ab364ac"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/asmjit.dll",
+            "SHA1": "b6b06160b3ecbdb063d603df3548de468ec24274"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/dbghelp.dll",
+            "SHA1": "3b277548e8fab6be2292522f78f1cedd6e730cd5"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/DeviceNameResolver.dll",
+            "SHA1": "ea1eeadea7a1fb3335ffedeaf872205e8a890ec6"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/jansson.dll",
+            "SHA1": "d809ca2dd992b10f4d7af9ef29d13321d42c8322"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/ldconvert.dll",
+            "SHA1": "f2fb05a3b5a0fe095a0150ce934100ad6a8cf3b7"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/libeay32.dll",
+            "SHA1": "844796bf5b2b7274595000adc1c91d08860e6ac8"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/loaddll.exe",
+            "SHA1": "56d103e8e59e993825890a0f7dfe8b9a588284e7"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/lz4.dll",
+            "SHA1": "a16d75add73a65e062c233b7eb70ca052de76e6d"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/msdia140.dll",
+            "SHA1": "911a67d9cf1a8a5f840486ab55d8b8d35a6d6a1c"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/msvcp120.dll",
+            "SHA1": "3f541023690680d002a22f64153ea4e000e5561b"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/msvcr120.dll",
+            "SHA1": "b2d5a8b5c0fd735038267914b5080aab57b78243"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/platforms/qwindows.dll",
+            "SHA1": "40c67f92551ab4ab075db36571e3c6e0b5ebb656"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/Qt5Core.dll",
+            "SHA1": "ad3134d0b5b8d0b3b646cb26176d950cb2279972"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/Qt5Gui.dll",
+            "SHA1": "709208d8a1672c5bb796197ff4789febed60ffcf"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/Qt5Network.dll",
+            "SHA1": "cad85a67ddbaac0e052f1efde5293e7dd7369567"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/Qt5Widgets.dll",
+            "SHA1": "9aebb88acb6b44cf7653a6b29b3e9e4ce9de667e"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/Scylla.dll",
+            "SHA1": "0b09c98af37af775e54c9f36f6df1ad3cb50b088"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/ssleay32.dll",
+            "SHA1": "bf3d68c44faaa8792de46be47ccfaa280da60d90"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/symsrv.dll",
+            "SHA1": "9f1ca9d1dd0ab534c7a94809cdee1b2e12b98d60"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/TitanEngine.dll",
+            "SHA1": "895f9d5384c223f4177391947afd7d777b1ec719"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/x32_bridge.dll",
+            "SHA1": "8988224e28b01b65bd02c8de6f9e01845f10078e"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/x32_dbg.dll",
+            "SHA1": "c25120b83ffd02a5b81e6d491105fa7983e64595"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/x32bridge.dll",
+            "SHA1": "5c561c382fcdd89cf0cde85bfddebb2f11b92c0c"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/x32dbg.dll",
+            "SHA1": "ce5f1e93b93079fbd1d4f7f1950f5e61df9b71c6"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/x32dbg.exe",
+            "SHA1": "4282b15b07437596e0b11cb15605f553c46fb10a"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/x32gui.dll",
+            "SHA1": "1426f4433e69d1cdf98007711598fb130937184a"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/XEDParse.dll",
+            "SHA1": "f028c3bc5bae645670fdc4ae9bfc6e21cf6c3fae"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/yara.dll",
+            "SHA1": "8c73eb2f8df9f43afffe2a52d927e6b6a12f3c1e"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/asmjit.dll",
+            "SHA1": "ded5e3b4f60e193acd3a4af9b605430040f80e17"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/dbghelp.dll",
+            "SHA1": "b87740872aba806e4c3030e3baad9e5909ec33dd"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/DeviceNameResolver.dll",
+            "SHA1": "10fce3f7c7858f51070285a0c112a2601336913a"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/jansson.dll",
+            "SHA1": "3f39df0df7cf7e967e30ab7840bc4c7f1ece1d52"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/ldconvert.dll",
+            "SHA1": "0faa47bd2fc7070c856ef4a34b4b5dac72b12519"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/libeay32.dll",
+            "SHA1": "b0f9021caa71f1fe17a399ab425f49a63f3d9fd3"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/loaddll.exe",
+            "SHA1": "0644e4e4057dcb892c0221584c4865b71874209b"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/lz4.dll",
+            "SHA1": "645e509d3a6af15ce6a64ec75fc61b8769ef2c14"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/msdia140.dll",
+            "SHA1": "38d8faa45f57ea050bff328bf0f23a8cd1f4e73f"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/msvcp120.dll",
+            "SHA1": "58c416508913045f99cdf559f31e71f88626f6de"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/msvcr120.dll",
+            "SHA1": "45a6671c64f353c79c0060bdafea0ceb5ad889be"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/platforms/qwindows.dll",
+            "SHA1": "58f5a1874ba1866a62154d9b5601f5ea0c204989"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/Qt5Core.dll",
+            "SHA1": "ea9fb38a40c6f3c1552390926c684d640c399d3f"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/Qt5Gui.dll",
+            "SHA1": "54e3f51ab39030e16c7b37c7e90f24919b99b123"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/Qt5Network.dll",
+            "SHA1": "d10fa3db0cef3bee143e817b3e315bba90f32f4a"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/Qt5Widgets.dll",
+            "SHA1": "0bf867f11b92c1f5e979220a530473ec2311430b"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/Scylla.dll",
+            "SHA1": "e2d9382a917374374b667513ca331fb63ee04985"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/ssleay32.dll",
+            "SHA1": "d881686b061f7dd48197206b1bab8479157ca629"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/symsrv.dll",
+            "SHA1": "55b7c9f2849a4b6324e750c9b43685bc733f5a99"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/TitanEngine.dll",
+            "SHA1": "88401aa00a93dc67d8e7ad70b5d0d06e3898b07e"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/x64_bridge.dll",
+            "SHA1": "7e979045be9dd21489196f23742ba8fb935726eb"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/x64_dbg.dll",
+            "SHA1": "0b13aac1d439bf494486732ff202c9800f9fe6c2"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/x64bridge.dll",
+            "SHA1": "f95863ae2a1e8769ff018de2d9a5d56700919896"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/x64dbg.dll",
+            "SHA1": "1b3e7c0c453c1ccdcbf212b3d7c7f31a09670e08"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/x64dbg.exe",
+            "SHA1": "1bb94d117ed7df56f8b1076eb4f00430f253baa0"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/x64gui.dll",
+            "SHA1": "cfa98246338ea14410cd30ad7333a95eafcf4031"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/XEDParse.dll",
+            "SHA1": "6204f217f4986be91d48552bcd4aa1b772b1832c"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/yara.dll",
+            "SHA1": "c0a10b44dae6db856b84c649249d77d12e02c5be"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64dbg.chm",
+            "SHA1": "691398c502c4aaca72d067bd00bb7fa9f0974626"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x96dbg.exe",
+            "SHA1": "a325b14213d97a0e10a4be2562d9195c1e8ca9de"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "x64core",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "commithash.txt"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "errordb.txt"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "exceptiondb.txt"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "mnemdb.json"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "ntstatusdb.txt"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/branch_closed-on.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/branch_closed.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/branch_open-on.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/branch_open.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/checkbox_checked.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/checkbox_checked_disabled.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/checkbox_checked_focus.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/checkbox_indeterminate.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/checkbox_indeterminate_disabled.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/checkbox_indeterminate_focus.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/checkbox_unchecked.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/checkbox_unchecked_disabled.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/checkbox_unchecked_focus.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/close-hover.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/close-pressed.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/close.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/down_arrow.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/down_arrow_disabled.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/Hmovetoolbar.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/Hsepartoolbar.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/left_arrow.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/left_arrow_disabled.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/radio_checked.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/radio_checked_disabled.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/radio_checked_focus.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/radio_unchecked.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/radio_unchecked_disabled.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/radio_unchecked_focus.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/right_arrow.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/right_arrow_disabled.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/sizegrip.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/stylesheet-branch-end.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/stylesheet-branch-more.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/stylesheet-vline.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/transparent.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/undock.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/up_arrow.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/up_arrow_disabled.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/Vmovetoolbar.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/rc/Vsepartoolbar.png"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/style.css"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "themes/Dark/style.ini"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_af.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_ar.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_bs.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_ca.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_ceb.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_cs.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_da.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_de.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_el.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_es_ES.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_fa.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_fi.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_fil.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_fr.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_he.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_hu.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_it.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_ja.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_ka.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_ko.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_nl.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_no.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_pl.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_pt_BR.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_pt_PT.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_ro.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_ru.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_si_LK.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_sr.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_sv_SE.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_th.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_tr.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_uk.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_vi.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_zh_CN.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "translations/x64dbg_zh_TW.qm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "winconstants.txt"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/asmjit.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/dbghelp.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/DeviceNameResolver.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/jansson.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/ldconvert.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/libeay32.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/loaddll.exe"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/lz4.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/msdia140.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/msvcp120.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/msvcr120.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/platforms/qwindows.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/Qt5Core.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/Qt5Gui.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/Qt5Network.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/Qt5Widgets.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/Scylla.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/ssleay32.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/symsrv.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/TitanEngine.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/x32_bridge.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/x32_dbg.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/x32bridge.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/x32dbg.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/x32dbg.exe"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/x32gui.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/XEDParse.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/yara.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/asmjit.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/dbghelp.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/DeviceNameResolver.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/jansson.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/ldconvert.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/libeay32.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/loaddll.exe"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/lz4.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/msdia140.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/msvcp120.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/msvcr120.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/platforms/qwindows.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/Qt5Core.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/Qt5Gui.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/Qt5Network.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/Qt5Widgets.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/Scylla.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/ssleay32.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/symsrv.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/TitanEngine.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/x64_bridge.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/x64_dbg.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/x64bridge.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/x64dbg.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/x64dbg.exe"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/x64gui.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/XEDParse.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/yara.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64dbg.chm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x96dbg.exe"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/platforms"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/platforms"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "translations"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "themes/Dark/rc"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "themes/Dark"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "themes"
+        }
+    ],
+    "Size": 82423460,
+    "Src": "x64core.x64dbg.zip",
+    "Version": "snapshot"
+}

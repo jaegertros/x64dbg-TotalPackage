@@ -1,0 +1,87 @@
+{
+    "Author": "mrexodia",
+    "Bugreport": "https://github.com/x64dbg/strmatch/issues",
+    "CompressedSize": 115258,
+    "Convert": [
+        {
+            "Action": "unpack_file",
+            "Path": "x32/plugins/strmatch.dp32",
+            "Pattern": "strmatch.zip",
+            "Src": "bin/x32/plugins/strmatch.dp32"
+        },
+        {
+            "Action": "unpack_file",
+            "Path": "x64/plugins/strmatch.dp64",
+            "Pattern": "strmatch.zip",
+            "Src": "bin/x64/plugins/strmatch.dp64"
+        }
+    ],
+    "Date": "2017-06-28",
+    "Download": [
+        {
+            "Src": "https://github.com/x64dbg/strmatch/releases/download/v0.1/strmatch.zip"
+        }
+    ],
+    "Github": "https://github.com/x64dbg/strmatch",
+    "Info": "Simple string matching plugin for x64dbg. Supports UTF8, UTF16 and Local codepages.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/strmatch.dp32",
+            "SHA1": "312e8bdd01d8f084da2c0a9e3e9f9e2d6b83c473"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/strmatch.dp64",
+            "SHA1": "29071f2ae0c82c81f665c20d918a3a7962e39b76"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "strmatch",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/strmatch.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/strmatch.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 233984,
+    "Src": "strmatch.x64dbg.zip",
+    "Version": "v0.1"
+}

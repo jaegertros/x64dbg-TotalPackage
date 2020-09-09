@@ -1,0 +1,135 @@
+{
+    "Author": "atom0s",
+    "Bugreport": "https://github.com/atom0s/CeAutoAsm-x64dbg/issues",
+    "CompressedSize": 460813,
+    "Date": "2017-10-05",
+    "Info": "Plugin for x64dbg to use Cheat Engine auto assembler scripts from the debugger command line.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "docs"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "docs/CeAutoAsm"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/cescripts"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/cescripts/calc.exe"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "docs/CeAutoAsm/README.md",
+            "SHA1": "70c94d966247942320e2eb88d1a40d3a974fd41f"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/cescripts/calc.exe/example.ce",
+            "SHA1": "6161ef21f4dff1e3e0a2e7e793f568485fdf1509"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/ceautoasm.dll",
+            "SHA1": "5d2b44fa46f055493a2191f27742c178075baef1"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/CeAutoAsmPlugin-32.dp32",
+            "SHA1": "97399ec38bfb073db9d8d58180b1b5fd5b5b0dd3"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/ceautoasm64.dll",
+            "SHA1": "c376b19b429dd243f7a6fe094b207de5889fe88c"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/CeAutoAsmPlugin-64.dp64",
+            "SHA1": "6c056b13062075b93de87b635ec271e2449a48a3"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "CeAutoAsm",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "docs/CeAutoAsm/README.md"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/cescripts/calc.exe/example.ce"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/ceautoasm.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/CeAutoAsmPlugin-32.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/ceautoasm64.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/CeAutoAsmPlugin-64.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/cescripts/calc.exe"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/cescripts"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "docs/CeAutoAsm"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "docs"
+        }
+    ],
+    "Size": 520237,
+    "Src": "CeAutoAsm.x64dbg.zip",
+    "Version": ""
+}

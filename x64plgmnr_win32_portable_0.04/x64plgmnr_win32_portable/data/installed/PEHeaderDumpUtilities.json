@@ -1,0 +1,88 @@
+{
+    "Author": "changeofpace",
+    "Bugreport": "https://github.com/changeofpace/PE-Header-Dump-Utilities/issues",
+    "CompressedSize": 128906,
+    "Convert": [
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/PEHeaderDumpUtilities.dp32",
+            "Pattern": "PEHeaderDumpUtilities.dp32"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/PEHeaderDumpUtilities.dp64",
+            "Pattern": "PEHeaderDumpUtilities.dp64"
+        }
+    ],
+    "Date": "2017-02-03",
+    "Download": [
+        {
+            "Src": "https://github.com/changeofpace/PE-Header-Dump-Utilities/releases/download/v1.0/PEHeaderDumpUtilities.dp32"
+        },
+        {
+            "Src": "https://github.com/changeofpace/PE-Header-Dump-Utilities/releases/download/v1.0/PEHeaderDumpUtilities.dp64"
+        }
+    ],
+    "Github": "https://github.com/changeofpace/PE-Header-Dump-Utilities",
+    "Info": "Adds several commands to x64dbg for dumping PE header information by address.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/PEHeaderDumpUtilities.dp32",
+            "SHA1": "fca5eb8550131dddf629dc6cbe0bc86e4a1741c5"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/PEHeaderDumpUtilities.dp64",
+            "SHA1": "b3b0dd58e9b6c183b8756e0c67a337c5091db67f"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "PEHeaderDumpUtilities",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/PEHeaderDumpUtilities.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/PEHeaderDumpUtilities.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 257024,
+    "Src": "PEHeaderDumpUtilities.x64dbg.zip",
+    "Version": "v1.0"
+}

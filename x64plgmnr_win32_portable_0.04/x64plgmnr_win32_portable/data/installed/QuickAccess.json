@@ -1,0 +1,55 @@
+{
+    "Author": "TheCrazyT",
+    "Bugreport": "https://github.com/TheCrazyT/x64dbg-plugin-quickaccess/issues",
+    "CompressedSize": 11350,
+    "Convert": [
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/quickaccess.dp32",
+            "Pattern": "quickaccess.dp64"
+        }
+    ],
+    "Date": "2019-08-27",
+    "Download": [
+        {
+            "Src": "https://github.com/TheCrazyT/x64dbg-plugin-quickaccess/releases/download/1.3.68/quickaccess.dp64"
+        }
+    ],
+    "Github": "https://github.com/TheCrazyT/x64dbg-plugin-quickaccess",
+    "Info": "For the lazy people that can't remember all the shortcuts. Just press Ctrl+3 and you can access any menu.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/quickaccess.dp32",
+            "SHA1": "ed0ee432354c16f32ce7ca46cdfe31cf3c34e212"
+        }
+    ],
+    "Is32": false,
+    "Is64": true,
+    "Name": "QuickAccess",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/quickaccess.dp32"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        }
+    ],
+    "Size": 26112,
+    "Src": "QuickAccess.x64dbg.zip",
+    "Version": "1.3.68"
+}

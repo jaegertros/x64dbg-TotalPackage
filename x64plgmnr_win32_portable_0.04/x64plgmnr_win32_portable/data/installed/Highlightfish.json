@@ -1,0 +1,67 @@
+{
+    "Author": "Insid3Code",
+    "Bugreport": "https://github.com/Insid3CodeTeam/Highlightfish/issues",
+    "CompressedSize": 10862,
+    "Date": "2017-08-30",
+    "Info": "Plugin to customize x64dbg colors and Highlightings.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/Highlightfish.dp32",
+            "SHA1": "3fa5418aaa1156897dfc811716f6106c263272ad"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/Highlightfish.dp64",
+            "SHA1": "0f41ea23ff731e0a46f2a196fc3b859daada2164"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "Highlightfish",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/Highlightfish.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/Highlightfish.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 37376,
+    "Src": "Highlightfish.x64dbg.zip",
+    "Version": ""
+}

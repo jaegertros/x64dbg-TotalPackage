@@ -1,0 +1,67 @@
+{
+    "Author": "Xjun",
+    "Bugreport": "https://forum.tuts4you.com/topic/39806-sharpod-x64-a_antidebug-plugin-support-for-x64dbg",
+    "CompressedSize": 592044,
+    "Date": "2018-01-04",
+    "Info": "A_AntiDebug Plugin.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/SharpOD x64.dp32",
+            "SHA1": "72c54f601c3d449c6e3cd368d8bc77e801593401"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/SharpOD x64.dp64",
+            "SHA1": "43208bcb2077cfb75cb63eaae6207b8252e09ab5"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "SharpOD",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/SharpOD x64.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/SharpOD x64.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 641024,
+    "Src": "SharpOD_0.6b.x64dbg.zip",
+    "Version": "0.6b"
+}

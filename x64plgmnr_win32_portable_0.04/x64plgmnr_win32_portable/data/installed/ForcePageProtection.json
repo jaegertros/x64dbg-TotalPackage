@@ -1,0 +1,88 @@
+{
+    "Author": "changeofpace",
+    "Bugreport": "https://github.com/changeofpace/Force-Page-Protection/issues",
+    "CompressedSize": 89562,
+    "Convert": [
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/ForcePageProtection.dp32",
+            "Pattern": "ForcePageProtection.dp32"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/ForcePageProtection.dp64",
+            "Pattern": "ForcePageProtection.dp64"
+        }
+    ],
+    "Date": "2017-03-17",
+    "Download": [
+        {
+            "Src": "https://github.com/changeofpace/Force-Page-Protection/releases/download/v1.1/ForcePageProtection.dp32"
+        },
+        {
+            "Src": "https://github.com/changeofpace/Force-Page-Protection/releases/download/v1.1/ForcePageProtection.dp64"
+        }
+    ],
+    "Github": "https://github.com/changeofpace/Force-Page-Protection",
+    "Info": "This plugin sets the page protection for memory mapped views in scenarios which cause NtProtectVirtualMemory to fail.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/ForcePageProtection.dp32",
+            "SHA1": "37482cf2ba1c41bd5983f0b7764dbb5cafe2899b"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/ForcePageProtection.dp64",
+            "SHA1": "69fab2b37c045e2c4c35d212df1193596e91246f"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "ForcePageProtection",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/ForcePageProtection.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/ForcePageProtection.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 174592,
+    "Src": "ForcePageProtection.x64dbg.zip",
+    "Version": "v1.1"
+}

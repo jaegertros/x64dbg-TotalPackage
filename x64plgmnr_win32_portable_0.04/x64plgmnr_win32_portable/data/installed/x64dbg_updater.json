@@ -1,0 +1,99 @@
+{
+    "Author": "gORDon_vdLg",
+    "Bugreport": "https://github.com/LFriede/x64dbg-updater/issues",
+    "CompressedSize": 64763,
+    "Convert": [
+        {
+            "Action": "unpack_directory",
+            "Path": "/",
+            "Pattern": "x64dbg_updater.x64dbg.zip",
+            "Src": "files"
+        }
+    ],
+    "Date": "2020-04-12",
+    "Download": [
+        {
+            "Src": "https://github.com/LFriede/x64dbg-updater/releases/download/0.3/x64dbg_updater.x64dbg.zip"
+        }
+    ],
+    "Github": "https://github.com/LFriede/x64dbg-updater",
+    "Info": "Automatic update checks with the plugin manager on x64dbg startup.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "_update.bat",
+            "SHA1": "e1bbed321b1fd90b92453ffeeb80fedca37a8c6c"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "README_updater.md",
+            "SHA1": "4cce34d800dae94af53062f17d5052ee0eac55cc"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/x64dbg_updater.dp32",
+            "SHA1": "bd99a1517364fb403176e5145e24a1be8f37dd4b"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/x64dbg_updater.dp64",
+            "SHA1": "0874e734c4d4f350136acf422c14107384db19b5"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "x64dbg_updater",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "_update.bat"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "README_updater.md"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/x64dbg_updater.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/x64dbg_updater.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 317657,
+    "Src": "x64dbg_updater.x64dbg.zip",
+    "Version": "0.3"
+}

@@ -1,0 +1,170 @@
+{
+    "Author": "Nisy/PYG",
+    "Bugreport": "https://github.com/sicaril/BaymaxTools/issues",
+    "CompressedSize": 641767,
+    "Convert": [
+        {
+            "Action": "unpack_file",
+            "Path": "docs/BaymaxtoOls/read me.txt",
+            "Pattern": "Baymax.toOls.for.x64dbg",
+            "Src": "read me.txt"
+        },
+        {
+            "Action": "unpack_directory",
+            "Path": "x32/plugins",
+            "Pattern": "Baymax.toOls.for.x64dbg",
+            "Src": "x32/plugins"
+        },
+        {
+            "Action": "unpack_directory",
+            "Path": "x64/plugins",
+            "Pattern": "Baymax.toOls.for.x64dbg",
+            "Src": "x64/plugins"
+        }
+    ],
+    "Date": "2020-03-25",
+    "Download": [
+        {
+            "Src": "https://github.com/sicaril/BaymaxTools/releases/download/1023/Baymax.toOls.for.x64dbg.v1.1.zip"
+        }
+    ],
+    "Github": "https://github.com/sicaril/BaymaxTools",
+    "Info": "Extract the signature(pattern) of the selected instruction and check the number of times the signature(pattern) appears in the current search module.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "docs"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "docs/BaymaxtoOls"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins/BaymaxLanguages"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins/BaymaxLanguages"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "docs/BaymaxtoOls/read me.txt",
+            "SHA1": "3fe389005293c8927bb1b2cd61cd845d2cd39d36"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/BaymaxLanguages/en.ini",
+            "SHA1": "f9cac7902bf98b0a8771ae63a0b83109e2b184f4"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/BaymaxLanguages/zh-CH.ini",
+            "SHA1": "a8ce3d17bc49d1928214d7d68e0e83406b41f61e"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/BaymaxTools.dp32",
+            "SHA1": "f6bb05a23d7b90f3816bf530ca391a40812b9a4b"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/BaymaxLanguages/en.ini",
+            "SHA1": "f9cac7902bf98b0a8771ae63a0b83109e2b184f4"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/BaymaxLanguages/zh-CH.ini",
+            "SHA1": "a8ce3d17bc49d1928214d7d68e0e83406b41f61e"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/BaymaxTools.dp64",
+            "SHA1": "8ecad8b42634f677a3bcda26116025abc8d60360"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "BaymaxtoOls",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "docs/BaymaxtoOls/read me.txt"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/BaymaxLanguages/en.ini"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/BaymaxLanguages/zh-CH.ini"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/BaymaxTools.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/BaymaxLanguages/en.ini"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/BaymaxLanguages/zh-CH.ini"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/BaymaxTools.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins/BaymaxLanguages"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins/BaymaxLanguages"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "docs/BaymaxtoOls"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "docs"
+        }
+    ],
+    "Size": 723786,
+    "Src": "BaymaxtoOls.x64dbg.zip",
+    "Version": "1023"
+}

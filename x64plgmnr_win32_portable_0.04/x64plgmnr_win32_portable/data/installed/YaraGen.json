@@ -1,0 +1,88 @@
+{
+    "Author": "mrexodia",
+    "Bugreport": "https://github.com/mrexodia/YaraGen/issues",
+    "CompressedSize": 119944,
+    "Convert": [
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/YaraGen.dp32",
+            "Pattern": "YaraGen.dp32"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/YaraGen.dp64",
+            "Pattern": "YaraGen.dp64"
+        }
+    ],
+    "Date": "2017-09-02",
+    "Download": [
+        {
+            "Src": "https://github.com/mrexodia/YaraGen/releases/download/v0.1/YaraGen.dp64"
+        },
+        {
+            "Src": "https://github.com/mrexodia/YaraGen/releases/download/v0.1/YaraGen.dp32"
+        }
+    ],
+    "Github": "https://github.com/mrexodia/YaraGen",
+    "Info": "Plugin for x64dbg to generate Yara rules from function basic blocks.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/YaraGen.dp32",
+            "SHA1": "b1218b5dce2752a8097294afaf7d7d4bc0238f37"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/YaraGen.dp64",
+            "SHA1": "757cc0a18bb44d0a234c2cc0a1d6cbb0ceb2ccc5"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "YaraGen",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/YaraGen.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/YaraGen.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 239104,
+    "Src": "YaraGen.x64dbg.zip",
+    "Version": "v0.1"
+}

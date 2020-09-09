@@ -1,0 +1,37 @@
+{
+    "Author": "mrfearless",
+    "Bugreport": "https://github.com/mrfearless/CopyToAsm-Plugin-x86/issues",
+    "CompressedSize": 0,
+    "Convert": [
+        {
+            "Action": "unpack_file",
+            "Path": "docs/CopyToAsm_x86/CopyToAsm-readme.txt",
+            "Pattern": "CopyToAsm-x86-Plugin.zip",
+            "Src": "CopyToAsm-readme.txt"
+        },
+        {
+            "Action": "unpack_file",
+            "Path": "x32/plugins/CopyToAsm.dp32",
+            "Pattern": "CopyToAsm-x86-Plugin.zip",
+            "Src": "CopyToAsm.dp32"
+        }
+    ],
+    "Date": "2018-01-29",
+    "Download": [
+        {
+            "Src": "https://github.com/mrfearless/CopyToAsm-Plugin-x86/blob/master/release/CopyToAsm-x86-Plugin.zip?raw=true"
+        }
+    ],
+    "Github": "https://github.com/mrfearless/CopyToAsm-Plugin-x86",
+    "Info": "An x86 plugin to copy a selected disassembly range in the x64dbg cpu view tab and convert to a assembler style code and output to clipboard or the reference view tab.",
+    "Install": [
+    ],
+    "Is32": true,
+    "Is64": false,
+    "Name": "CopyToAsm_x86",
+    "Remove": [
+    ],
+    "Size": 0,
+    "Src": "CopyToAsm_x86.x64dbg.zip",
+    "Version": "1.0.0.X"
+}

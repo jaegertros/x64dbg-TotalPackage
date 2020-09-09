@@ -1,0 +1,120 @@
+{
+    "Author": "Lasha Khasaia, @qaz_qaz",
+    "Bugreport": "https://github.com/secrary/idenLib/issues",
+    "CompressedSize": 818471,
+    "Convert": [
+        {
+            "Action": "make_directory",
+            "Path": "plugins/x32/SymEx"
+        },
+        {
+            "Action": "unpack_file",
+            "Path": "x32/plugins/idenLib.dp32",
+            "Pattern": "idenLib.zip",
+            "Src": "idenLib.dp32"
+        },
+        {
+            "Action": "unpack_file",
+            "Path": "idenLib.exe",
+            "Pattern": "idenLib.zip",
+            "Src": "idenLib.exe"
+        },
+        {
+            "Action": "unpack_file",
+            "Path": "idenLib.py",
+            "Pattern": "idenLib.zip",
+            "Src": "idenLib.py"
+        }
+    ],
+    "Date": "2019-02-25",
+    "Download": [
+        {
+            "Src": "https://github.com/secrary/idenLib/releases/download/v0.4.2/idenLib.zip"
+        },
+        {
+            "Src": "https://user-images.githubusercontent.com/16405698/53361885-c2261580-3930-11e9-81e1-e8c5057b46a2.png"
+        },
+        {
+            "Src": "https://user-images.githubusercontent.com/16405698/53361875-b89cad80-3930-11e9-8503-daf444c34eb1.png"
+        }
+    ],
+    "Github": "https://github.com/secrary/idenLib",
+    "Info": "Plugin to identify library functions",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "plugins/x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "plugins/x32/SymEx"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "idenLib.exe",
+            "SHA1": "6cfa31169510e68624a9be6d79bf1968b0c3a58d"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "idenLib.py",
+            "SHA1": "2ed479e842ce6b77fdf79cbc877cfd3be8f51da6"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/idenLib.dp32",
+            "SHA1": "5486597dd044d5bfb4644c8397f9accf689048a6"
+        }
+    ],
+    "Is32": true,
+    "Is64": false,
+    "Name": "idenLib",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "idenLib.exe"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "idenLib.py"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/idenLib.dp32"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "plugins/x32/SymEx"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "plugins/x32"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "plugins"
+        }
+    ],
+    "Size": 1935679,
+    "Src": "idenLib.x64dbg.zip",
+    "Version": "v0.4.2"
+}

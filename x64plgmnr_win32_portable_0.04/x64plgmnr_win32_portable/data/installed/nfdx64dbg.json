@@ -1,0 +1,81 @@
+{
+    "Author": "hors",
+    "Bugreport": "https://github.com/horsicq/nfdx64dbg/issues",
+    "CompressedSize": 943186,
+    "Convert": [
+        {
+            "Action": "unpack_directory",
+            "Path": "/",
+            "Pattern": "release.zip",
+            "Src": "release"
+        }
+    ],
+    "Date": "2019-12-28",
+    "Download": [
+        {
+            "Src": "https://github.com/horsicq/nfdx64dbg/releases/download/0.11/release.zip"
+        }
+    ],
+    "Github": "https://github.com/horsicq/nfdx64dbg",
+    "Info": "Linker/Compiler/Tool detector.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/nfd.dp32",
+            "SHA1": "e7002990a2401fd68fba91c1c27911f80db9f12e"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/nfd.dp64",
+            "SHA1": "9cf61eb949121e01108452c77a57ef813ed94440"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "nfdx64dbg",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/nfd.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/nfd.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 2668544,
+    "Src": "nfdx64dbg.x64dbg.zip",
+    "Version": "0.11"
+}

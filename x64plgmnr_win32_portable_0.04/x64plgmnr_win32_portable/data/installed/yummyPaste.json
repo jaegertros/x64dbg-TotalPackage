@@ -1,0 +1,88 @@
+{
+    "Author": "Oguz Kartal",
+    "Bugreport": "https://github.com/0ffffffffh/yummyPaste/issues",
+    "CompressedSize": 88352,
+    "Convert": [
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/yummyPaste.dp32",
+            "Pattern": "yummyPaste.dp32"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/yummyPaste.dp64",
+            "Pattern": "yummyPaste.dp64"
+        }
+    ],
+    "Date": "2020-08-21",
+    "Download": [
+        {
+            "Src": "https://github.com/0ffffffffh/yummyPaste/releases/download/v1.0/yummyPaste.dp64"
+        },
+        {
+            "Src": "https://github.com/0ffffffffh/yummyPaste/releases/download/v1.0/yummyPaste.dp32"
+        }
+    ],
+    "Github": "https://github.com/0ffffffffh/yummyPaste",
+    "Info": "Q plugin to able to paste the various type of formatted binary data into the x64dbg's disassembler or dump section.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/yummyPaste.dp32",
+            "SHA1": "1379a2a6bc43b33454ba33038ab5afc34364cbd3"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/yummyPaste.dp64",
+            "SHA1": "8ff9115415fd39444a1bdf1df8414bd394d42b74"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "yummyPaste",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/yummyPaste.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/yummyPaste.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 169472,
+    "Src": "yummyPaste.x64dbg.zip",
+    "Version": "v1.0"
+}

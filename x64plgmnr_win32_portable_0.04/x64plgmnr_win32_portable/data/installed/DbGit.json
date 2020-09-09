@@ -1,0 +1,81 @@
+{
+    "Author": "mrexodia",
+    "Bugreport": "https://github.com/x64dbg/DbGit/issues",
+    "CompressedSize": 116550,
+    "Convert": [
+        {
+            "Action": "unpack_directory",
+            "Path": "/",
+            "Pattern": "DbGit",
+            "Src": "/"
+        }
+    ],
+    "Date": "2018-02-14",
+    "Download": [
+        {
+            "Src": "https://github.com/x64dbg/DbGit/releases/download/v0.1/DbGit_86828fb1.zip"
+        }
+    ],
+    "Github": "https://github.com/x64dbg/DbGit",
+    "Info": "Simple plugin to automatically add x64dbg databases to version control.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/DbGit.dp32",
+            "SHA1": "d1e385e8523a05d5a596464de74a3465f846a172"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/DbGit.dp64",
+            "SHA1": "4e29ff00955e5276d80d00528d7a4d70b40afe73"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "DbGit",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/DbGit.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/DbGit.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 228864,
+    "Src": "DbGit.x64dbg.zip",
+    "Version": "v0.1"
+}

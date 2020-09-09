@@ -1,0 +1,87 @@
+{
+    "Author": "jdavidberger",
+    "Bugreport": "https://github.com/jdavidberger/chaiScriptPlugin/issues",
+    "CompressedSize": 1039033,
+    "Convert": [
+        {
+            "Action": "unpack_file",
+            "Path": "x32/plugins/chaiScriptPlugin.dp32",
+            "Pattern": "chaiScriptPlugin",
+            "Src": "chaiScriptPlugin.dp32"
+        },
+        {
+            "Action": "unpack_file",
+            "Path": "x64/plugins/chaiScriptPlugin.dp64",
+            "Pattern": "chaiScriptPlugin",
+            "Src": "chaiScriptPlugin.dp64"
+        }
+    ],
+    "Date": "2016-07-10",
+    "Download": [
+        {
+            "Src": "https://github.com/jdavidberger/chaiScriptPlugin/releases/download/v0.0.2/chaiScriptPlugin-v0.0.2.zip"
+        }
+    ],
+    "Github": "https://github.com/jdavidberger/chaiScriptPlugin",
+    "Info": "Plugin which enables chai scripts to run inside of x64dbg.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/chaiScriptPlugin.dp32",
+            "SHA1": "186718f978a5aea154739763cbcb508faeaf976e"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/chaiScriptPlugin.dp64",
+            "SHA1": "db5d8d392b8ab2a224e9efa4a190b7ca368e35f2"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "ChaiScript",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/chaiScriptPlugin.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/chaiScriptPlugin.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 4203008,
+    "Src": "ChaiScript.x64dbg.zip",
+    "Version": "v0.0.2"
+}

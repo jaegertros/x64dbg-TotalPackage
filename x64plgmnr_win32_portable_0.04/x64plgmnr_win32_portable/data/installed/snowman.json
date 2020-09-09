@@ -1,0 +1,88 @@
+{
+    "Author": "mrexodia",
+    "Bugreport": "https://github.com/x64dbg/snowman/issues",
+    "CompressedSize": 1533317,
+    "Convert": [
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/snowman.dp32",
+            "Pattern": "snowman.dp32"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/snowman.dp64",
+            "Pattern": "snowman.dp64"
+        }
+    ],
+    "Date": "2019-06-22",
+    "Download": [
+        {
+            "Src": "https://github.com/x64dbg/snowman/releases/download/plugin-v1/snowman.dp64"
+        },
+        {
+            "Src": "https://github.com/x64dbg/snowman/releases/download/plugin-v1/snowman.dp32"
+        }
+    ],
+    "Github": "https://github.com/x64dbg/snowman",
+    "Info": "Snowman decompiler plugin.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/snowman.dp32",
+            "SHA1": "8fb593f68a5b036a3d37387bc20e1fac70edbc24"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/snowman.dp64",
+            "SHA1": "e5be6a197c86870af4622f3716274be9e2def205"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "snowman",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/snowman.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/snowman.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 4892160,
+    "Src": "snowman.x64dbg.zip",
+    "Version": "plugin-v1"
+}

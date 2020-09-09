@@ -1,0 +1,128 @@
+{
+    "Author": "Aguila & cypher",
+    "Bugreport": "https://github.com/x64dbg/ScyllaHide/issues",
+    "CompressedSize": 903202,
+    "Date": "2020-08-09",
+    "Info": "Open-source user-mode Anti-Anti-Debug plugin.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "docs"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "docs/ScyllaHide"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "docs/ScyllaHide/ScyllaHide.pdf",
+            "SHA1": "a925c452ca4ad32552e011bfe1ffa28eef21ba26"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/HookLibraryx86.dll",
+            "SHA1": "90e69fe0ee6f3fd9724d4a76413aede8c4b87a63"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/scylla_hide.ini",
+            "SHA1": "e7d6bcf8c63a759a38d4002b8e78b314f77cdeb3"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/ScyllaHideX64DBGPlugin.dp32",
+            "SHA1": "9c6d7a0d7e27b3bf0a9063bf61739b3a70aefe30"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/HookLibraryx64.dll",
+            "SHA1": "aa2dcfd016096eb88f9da4c8189266c3a7f32d10"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/scylla_hide.ini",
+            "SHA1": "e7d6bcf8c63a759a38d4002b8e78b314f77cdeb3"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/ScyllaHideX64DBGPlugin.dp64",
+            "SHA1": "da010c52f9310373533464b5b3179fa32bfc9c73"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "ScyllaHide",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "docs/ScyllaHide/ScyllaHide.pdf"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/HookLibraryx86.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/scylla_hide.ini"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/ScyllaHideX64DBGPlugin.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/HookLibraryx64.dll"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/scylla_hide.ini"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/ScyllaHideX64DBGPlugin.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "docs/ScyllaHide"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "docs"
+        }
+    ],
+    "Size": 1744187,
+    "Src": "ScyllaHide_2020-08-09.x64dbg.zip",
+    "Version": "2020-08-09"
+}

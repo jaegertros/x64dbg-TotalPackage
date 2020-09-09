@@ -1,0 +1,88 @@
+{
+    "Author": "Oguz Kartal",
+    "Bugreport": "https://github.com/0ffffffffh/Api-Break-for-x64dbg/issues",
+    "CompressedSize": 87695,
+    "Convert": [
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/x64dbgApiBreak.dp32",
+            "Pattern": "x64dbgApiBreak.dp32"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/x64dbgApiBreak.dp64",
+            "Pattern": "x64dbgApiBreak.dp64"
+        }
+    ],
+    "Date": "2018-01-16",
+    "Download": [
+        {
+            "Src": "https://github.com/0ffffffffh/Api-Break-for-x64dbg/releases/download/BETA/x64dbgApiBreak.dp32"
+        },
+        {
+            "Src": "https://github.com/0ffffffffh/Api-Break-for-x64dbg/releases/download/BETA/x64dbgApiBreak.dp64"
+        }
+    ],
+    "Github": "https://github.com/0ffffffffh/Api-Break-for-x64dbg",
+    "Info": "A x64dbg plugin to set breakpoints Win32/64 API calls visually & easly. It has both x86 and x64 bit version.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/x64dbgApiBreak.dp32",
+            "SHA1": "21e7cdf209f3dd1eb74db5277edad99ba118b062"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/x64dbgApiBreak.dp64",
+            "SHA1": "0ed9c9e2858544dfd80b0d8745ff7ce27c9cd9f1"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "x64dbgApiBreak",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/x64dbgApiBreak.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/x64dbgApiBreak.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 172544,
+    "Src": "x64dbgApiBreak.x64dbg.zip",
+    "Version": "BETA"
+}

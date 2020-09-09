@@ -1,0 +1,42 @@
+{
+    "Author": "pastaCLS",
+    "Bugreport": "https://github.com/pastaoficial/cndsteroids/issues",
+    "CompressedSize": 49956,
+    "Date": "2017-03-01",
+    "Info": "Plugin to compare strings in conditional expressions.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/cndsteroids.dp32",
+            "SHA1": "a225219335964e9e4034d9ed1c3a5926d369e0da"
+        }
+    ],
+    "Is32": true,
+    "Is64": false,
+    "Name": "cndsteroids",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/cndsteroids.dp32"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 93696,
+    "Src": "cndsteroids.x64dbg.zip",
+    "Version": "1.0"
+}

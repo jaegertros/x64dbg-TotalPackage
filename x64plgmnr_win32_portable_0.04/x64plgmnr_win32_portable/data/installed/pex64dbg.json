@@ -1,0 +1,81 @@
+{
+    "Author": "hors",
+    "Bugreport": "https://github.com/horsicq/pex64dbg/issues",
+    "CompressedSize": 459357,
+    "Convert": [
+        {
+            "Action": "unpack_directory",
+            "Path": "/",
+            "Pattern": "release.zip",
+            "Src": "release"
+        }
+    ],
+    "Date": "2019-12-28",
+    "Download": [
+        {
+            "Src": "https://github.com/horsicq/pex64dbg/releases/download/0.04/release.zip"
+        }
+    ],
+    "Github": "https://github.com/horsicq/pex64dbg",
+    "Info": "PE Viewer.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/peviewer.dp32",
+            "SHA1": "ecde22a97765a17865482f658010d8f7c4bf230d"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/peviewer.dp64",
+            "SHA1": "4bd208ae5d7248f0f40caf4b5485dc63d1e8342c"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "pex64dbg",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/peviewer.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/peviewer.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 1352192,
+    "Src": "pex64dbg.x64dbg.zip",
+    "Version": "0.04"
+}

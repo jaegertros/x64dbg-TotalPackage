@@ -1,0 +1,92 @@
+{
+    "Author": "RaMMicHaeL",
+    "Bugreport": "https://rammichael.com",
+    "CompressedSize": 482104,
+    "Date": "2017-05-20",
+    "Info": "Multiline Ultimate Assembler is a multiline (and ultimate) assembler (and disassembler) plugin.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "docs"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "docs/multiasm"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "docs/multiasm/multiasm.chm",
+            "SHA1": "a34d5c849682200666bb10217aea6d1f3015845e"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/multiasm_x64dbg.dp32",
+            "SHA1": "c2abb77b64f98d64ffcbab73afa5f9e06d923935"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/multiasm_x64dbg.dp64",
+            "SHA1": "33933d17d10a63baa2816971555e3ff512c63c66"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "multiasm",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "docs/multiasm/multiasm.chm"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/multiasm_x64dbg.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/multiasm_x64dbg.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "docs/multiasm"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "docs"
+        }
+    ],
+    "Size": 675724,
+    "Src": "multiasm.x64dbg.zip",
+    "Version": ""
+}

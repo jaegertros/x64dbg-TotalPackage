@@ -1,0 +1,67 @@
+{
+    "Author": "Nukem",
+    "Bugreport": "https://github.com/Nukem9/SwissArmyKnife/issues",
+    "CompressedSize": 694550,
+    "Date": "2019-08-12",
+    "Info": "Utility for linker map files, diff files, peid/ida signatures, and code signature generation.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/SwissArmyKnife.dp32",
+            "SHA1": "8b0f9953c3611bf85929fa7e8ff4e954c063972e"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/SwissArmyKnife.dp64",
+            "SHA1": "5dc9b4705e1d50bb4859a66171295375eb474352"
+        }
+    ],
+    "Is32": true,
+    "Is64": true,
+    "Name": "SwissArmyKnife",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/SwissArmyKnife.dp32"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/SwissArmyKnife.dp64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 1225728,
+    "Src": "SwissArmyKnife_12-8-2019.x64dbg.zip",
+    "Version": "12-8-2019"
+}

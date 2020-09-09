@@ -1,0 +1,56 @@
+{
+    "Author": "brock7",
+    "Bugreport": "https://github.com/brock7/xdbg/issues",
+    "CompressedSize": 27376,
+    "Convert": [
+        {
+            "Action": "unpack_file",
+            "Path": "x32/plugins/xdbgcore.dp32",
+            "Pattern": "xdbgcore.zip",
+            "Src": "xdbgcore.dp32"
+        }
+    ],
+    "Date": "2016-04-20",
+    "Download": [
+        {
+            "Src": "https://github.com/brock7/xdbg/releases/download/v0.3-5/xdbgcore.zip"
+        }
+    ],
+    "Github": "https://github.com/brock7/xdbg",
+    "Info": "Open-source user-mode Anti-Anti-Debug plugin for x64dbg & cheatengine.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/xdbgcore.dp32",
+            "SHA1": "f663a570f6a756321cb6a8e5335f31c332f86330"
+        }
+    ],
+    "Is32": true,
+    "Is64": false,
+    "Name": "xdbg",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/xdbgcore.dp32"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 57856,
+    "Src": "xdbg.x64dbg.zip",
+    "Version": "v0.3-5"
+}

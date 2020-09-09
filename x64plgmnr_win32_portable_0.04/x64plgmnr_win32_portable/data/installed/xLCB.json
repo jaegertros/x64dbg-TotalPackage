@@ -1,0 +1,55 @@
+{
+    "Author": "ThunderCls",
+    "Bugreport": "https://github.com/ThunderCls/xLCB/issues",
+    "CompressedSize": 64995,
+    "Convert": [
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/xLCB.dp32",
+            "Pattern": "xLCB.dp32"
+        }
+    ],
+    "Date": "2016-10-02",
+    "Download": [
+        {
+            "Src": "https://github.com/ThunderCls/xLCB/releases/download/1.0/xLCB.dp32"
+        }
+    ],
+    "Github": "https://github.com/ThunderCls/xLCB",
+    "Info": "Plugin that mimics the function of the original LCB plugin for OllyDbg by scherzo.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/xLCB.dp32",
+            "SHA1": "4239792f5637b77fb5aa7b1a8c724acbe5b94954"
+        }
+    ],
+    "Is32": true,
+    "Is64": false,
+    "Name": "xLCB",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/xLCB.dp32"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        }
+    ],
+    "Size": 74240,
+    "Src": "xLCB.x64dbg.zip",
+    "Version": "1.0"
+}

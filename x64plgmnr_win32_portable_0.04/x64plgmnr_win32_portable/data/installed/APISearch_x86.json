@@ -1,0 +1,87 @@
+{
+    "Author": "mrfearless",
+    "Bugreport": "https://github.com/mrfearless/APISearch-Plugin-x86/issues",
+    "CompressedSize": 9087,
+    "Convert": [
+        {
+            "Action": "unpack_file",
+            "Path": "docs/APISearch_x86/APISearch-readme.txt",
+            "Pattern": "APISearch-x86-Plugin.zip",
+            "Src": "APISearch-readme.txt"
+        },
+        {
+            "Action": "unpack_file",
+            "Path": "x32/plugins/APISearch.dp32",
+            "Pattern": "APISearch-x86-Plugin.zip",
+            "Src": "APISearch.dp32"
+        }
+    ],
+    "Date": "2016-07-28",
+    "Download": [
+        {
+            "Src": "https://github.com/mrfearless/APISearch-Plugin-x86/files/398413/APISearch-x86-Plugin.zip"
+        }
+    ],
+    "Github": "https://github.com/mrfearless/APISearch-Plugin-x86",
+    "Info": "A plugin to allow searching for API calls and/or searching online from command bar.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "docs"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "docs/APISearch_x86"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "docs/APISearch_x86/APISearch-readme.txt",
+            "SHA1": "0122644ff1e62d2fee3310f2a9b8e6aa4118bbc1"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x32/plugins/APISearch.dp32",
+            "SHA1": "05827c54f6b896d37c7584819d12acaa1db4aed7"
+        }
+    ],
+    "Is32": true,
+    "Is64": false,
+    "Name": "APISearch_x86",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "docs/APISearch_x86/APISearch-readme.txt"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x32/plugins/APISearch.dp32"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x32"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "docs/APISearch_x86"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "docs"
+        }
+    ],
+    "Size": 18284,
+    "Src": "APISearch_x86.x64dbg.zip",
+    "Version": "1.0.0.X"
+}

@@ -1,0 +1,83 @@
+{
+    "Author": "Andy53",
+    "Bugreport": "https://github.com/Andy53/ERC.Xdbg/issues",
+    "CompressedSize": 1153423,
+    "Convert": [
+        {
+            "Action": "unpack_directory",
+            "Path": "x64/plugins",
+            "Pattern": "ERC.Xdbg",
+            "Src": "/"
+        }
+    ],
+    "Date": "2020-01-02",
+    "Download": [
+        {
+            "Src": "https://github.com/Andy53/ERC.Xdbg/releases/download/64/ERC.Xdbg_64-1.3.zip"
+        }
+    ],
+    "Github": "https://github.com/Andy53/ERC.Xdbg",
+    "Info": "An X64dbg Plugin of the ERC Library. ERC is an exploit development framework similar to Mona.py.",
+    "Install": [
+        {
+            "Action": "make_directory",
+            "Path": "x64"
+        },
+        {
+            "Action": "make_directory",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/Erc.Xdbg.dp64",
+            "SHA1": "92a3ca02313d8a0b155e114a3809ba745b82aa0d"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/FASM.DLL",
+            "SHA1": "14b7f77b7b4275759ea21476a67877e37560fef7"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/FASMX64.DLL",
+            "SHA1": "2f3e2d5988314ebd533f1882078d939a1e8853c0"
+        },
+        {
+            "Action": "copy_file",
+            "Path": "x64/plugins/Reloaded.Assembler.targets",
+            "SHA1": "c193f61848737fedb8915ff6b1c6c08ab21c5d67"
+        }
+    ],
+    "Is32": false,
+    "Is64": true,
+    "Name": "ERCXdbg",
+    "Remove": [
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/Erc.Xdbg.dp64"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/FASM.DLL"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/FASMX64.DLL"
+        },
+        {
+            "Action": "remove_file",
+            "Path": "x64/plugins/Reloaded.Assembler.targets"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64/plugins"
+        },
+        {
+            "Action": "remove_directory_if_empty",
+            "Path": "x64"
+        }
+    ],
+    "Size": 1294729,
+    "Src": "ERCXdbg.x64dbg.zip",
+    "Version": "64"
+}
